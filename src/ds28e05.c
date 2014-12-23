@@ -33,8 +33,8 @@
 
 #define DS28E05_READ_MEMORY   0xf0
 #define DS28E05_WRITE_MEMORY  0x55
-#define PAGE_MASK             0b01110000
-#define SEG_MASK              0b00001110
+#define PAGE_MASK             0x70	// 0b01110000
+#define SEG_MASK              0x0E	// 0b00001110
 #define SEG_SIZE              8
 #define BYTES_PER_SEG         2
 #define BYTES_PER_PAGE        (SEG_SIZE * BYTES_PER_SEG)
